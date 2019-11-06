@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: #222;
+    color: white;
+}
+
+.title-bar{
+    -webkit-app-region: drag;
+    display: flex;
+    text-align: left;
+    background-color: #111;
+    color: white;
+    width: 100%;
+    padding: 0;
+}
+
+.title-bar h1{
+    color: white;
+    padding: 10px;
+    margin: 0;
+    font-size: 16px;
+    flex-grow: 100;
+}
+
+.title-btn{
+    -webkit-app-region: no-drag;
+    cursor: pointer;
+    background: black;
+    color: white;
+    border: none;
+    padding: 0px 20px;
+}
+
+.title-btn:hover{
+    background: #444;
+}
