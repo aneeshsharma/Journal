@@ -13,7 +13,7 @@
     "list"
   ],
   "author": "Anish Sharma",
-  "license": "GPL-v3.0",
+  "license": "GPL-3.0",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
     "electron": "^7.1.0"
