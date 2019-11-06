@@ -15,6 +15,9 @@ function createWindow () {
   mainWindow = new BrowserWindow({
     width: 1280,
     height: 720,
+    webPreferences: {
+        nodeIntegration: true
+    },
     frame: false
   })
 
@@ -24,6 +27,7 @@ function createWindow () {
   mainWindow.on('closed', function () {
     mainWindow = null
   })
+  console.log("Window Created\n");
 }
 
 app.on('ready', createWindow)

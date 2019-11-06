@@ -1,15 +1,21 @@
 <!DOCTYPE html>
+
 <html>
     <head>
-        <title>Manager</title>
+        <title>Journal</title>
         <link rel="stylesheet" href="css/master.css" type="text/css">
+        <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css" type="text/css">
     </head>
     <body>
         <div class="title-bar">
             <h1>Journal</h1>
-            <button class="title-btn">X</button>
-            <button class="title-btn">X</button>
+            <button class="title-btn normal" id="minimize-btn"><i class="far fa-window-minimize"></i></button>
+            <button class="title-btn normal" id="maximize-btn"><i class="far fa-window-maximize"></i></button>
+            <button class="title-btn red" id="close-btn"><i class="fas fa-times"></i></button>
         </div>
            Hello
     </body>
+    <script>
+        require('./scripts/renderer.js')
+    </script>
 </html>

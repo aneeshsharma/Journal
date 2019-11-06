@@ -7,7 +7,7 @@
 body{
     padding: 0;
     margin: 0;
-    background: #222;
+    background: rgb(35, 37, 49);
     color: white;
 }
 
@@ -15,7 +15,7 @@ body{
     -webkit-app-region: drag;
     display: flex;
     text-align: left;
-    background-color: #111;
+    background-color: rgb(16, 31, 58);
     color: white;
     width: 100%;
     padding: 0;
@@ -32,12 +32,14 @@ body{
 .title-btn{
     -webkit-app-region: no-drag;
     cursor: pointer;
-    background: black;
+    background-color: rgb(29, 28, 44);
     color: white;
     border: none;
-    padding: 0px 20px;
+    padding: 0px 25px;
+    font-size: 10px;
+    transition-duration: 0.1s;
 }
 
 .title-btn:hover{
-    background: #444;
+    background-color: rgb(20, 20, 26);
 }
