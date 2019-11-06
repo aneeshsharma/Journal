@@ -8,12 +8,22 @@
     </head>
     <body>
         <div class="title-bar">
+            <div class="filler"></div>
             <h1><i class="far fa-file-alt"></i>&nbsp;&nbsp;&nbsp;Journal</h1>
             <button class="title-btn normal" id="minimize-btn"><i class="far fa-window-minimize"></i></button>
             <button class="title-btn normal" id="maximize-btn"><i class="far fa-window-maximize"></i></button>
             <button class="title-btn red" id="close-btn"><i class="fas fa-times"></i></button>
         </div>
-           Hello
+        <div class="container">
+            <div class="sections">
+                <button class="active"><i class="fas fa-star"></i></button>
+                <button><i class="fas fa-list-ol"></i></button>
+                <button><i class="far fa-file-alt"></i></button>
+            </div>
+            <div class="content">
+                <h1>Highlights</h1>
+            </div>
+        </div>
     </body>
     <script>
         require('./scripts/renderer.js')

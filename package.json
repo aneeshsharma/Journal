@@ -3,8 +3,20 @@
   "version": "0.1.0",
   "description": "A time management application",
   "main": "main.js",
+  "email": "example@example.com",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-packager . journal --overwrite --platform=linux --arch=x64 --prune=true --out=release-builds --version-string.ProductName=\"Journal\"",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.journal",
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    }
   },
   "keywords": [
     "To-do",
@@ -12,11 +24,16 @@
     "organise",
     "list"
   ],
-  "author": "Anish Sharma",
+  "author": {
+    "name": "Anish Sharma",
+    "email": "example@example.com"
+  },
   "license": "GPL-3.0",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
-    "electron": "^7.1.0"
+    "electron": "^7.1.0",
+    "electron-builder": "^22.1.0",
+    "electron-packager": "^14.1.0"
   },
   "dependencies": {
     "electron-reload": "^1.5.0",
