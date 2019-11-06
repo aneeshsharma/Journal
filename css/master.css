@@ -7,32 +7,32 @@
 body{
     padding: 0;
     margin: 0;
-    background: rgb(35, 37, 49);
-    color: white;
+    background: rgb(255, 255, 255);
+    color: rgb(53, 52, 52);
 }
 
 .title-bar{
     -webkit-app-region: drag;
     display: flex;
     text-align: left;
-    background-color: rgb(16, 31, 58);
-    color: white;
+    background-color: rgb(53, 115, 231);
+    color: rgb(32, 32, 32);
     width: 100%;
     padding: 0;
 }
 
 .title-bar h1{
     color: white;
-    padding: 10px;
+    padding: 10px 50px;
     margin: 0;
-    font-size: 16px;
+    font-size: 20px;
     flex-grow: 100;
 }
 
 .title-btn{
     -webkit-app-region: no-drag;
     cursor: pointer;
-    background-color: rgb(29, 28, 44);
+    background-color: rgb(64, 59, 136);
     color: white;
     border: none;
     padding: 0px 25px;
