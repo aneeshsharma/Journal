@@ -1,15 +1,23 @@
 {
     "owner": "Joe",
-    "items": [
+    "data": [
         {
             "name": "daily",
             "type": "todo",
-            "list": ["task1", "task2", "task3"]
+            "data": [
+                { "type": "task", "data": "Task 1" },
+                { "type": "task", "data": "Task 2" },
+                { "type": "task", "data": "Task 2" }
+            ]
         },
         {
             "name": "weekly",
             "type": "todo",
-            "list": ["task1", "task2", "task3"]
+            "data": [
+                { "type": "task", "data": "Task 1" },
+                { "type": "task", "data": "Task 2" },
+                { "type": "task", "data": "Task 2" }
+            ]
         },
         {
             "name": "rough",

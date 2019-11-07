@@ -38,6 +38,7 @@ body {
     margin-left: 80px;
     margin: 0;
     font-size: 20px;
+    font-weight: normal;
     flex-grow: 100;
 }
 
@@ -114,8 +115,59 @@ body {
 .content {
     display: flex;
     flex-grow: 100;
+    flex-direction: column;
     padding: 20px;
+    align-items: center;
+}
+
+.content .row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     justify-content: center;
+}
+
+.content .card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 20px;
+    min-height: 200px;
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.card h2 {
+    font-size: 22px;
+    margin: 0;
+    color: #333;
+}
+
+.card ul {
+    margin: 5px;
+    padding: 0 0 0 5px;
+    list-style-type: none;
+}
+
+.card ul .check {
+    border-left: 10px solid green;
+}
+
+.card ul .high {
+    border-left: 10px solid red;
+}
+
+.card ul li {
+    margin: 5px;
+    padding: 10px;
+    background: white;
+    border-left: 10px solid indigo;
+    transition: 0.2s;
+}
+
+.card ul li:hover {
+    transform: scale(1.05, 1);
 }
 
 .content h1 {
@@ -123,6 +175,7 @@ body {
     color: #333;
     font-size: 30px;
     animation: enter-top 0.5s;
+    margin: 5px;
 }
 
 @keyframes enter-top {

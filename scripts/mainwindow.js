@@ -11,7 +11,7 @@ function initWindow() {
     journalData = fs.readFileSync("journal.json").toString();
     journal = JSON.parse(journalData);
     document.getElementById("title").innerHTML =
-        "Journal | " + journal["owner"];
+        "<b>Journal</b> | " + journal["owner"];
     initializeSections();
 }
 
