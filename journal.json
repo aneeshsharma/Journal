@@ -1,0 +1,20 @@
+{
+    "owner": "Joe",
+    "items": [
+        {
+            "name": "daily",
+            "type": "todo",
+            "list": ["task1", "task2", "task3"]
+        },
+        {
+            "name": "weekly",
+            "type": "todo",
+            "list": ["task1", "task2", "task3"]
+        },
+        {
+            "name": "rough",
+            "type": "note",
+            "data": "The quick brown fox jumps over the lazy dog."
+        }
+    ]
+}

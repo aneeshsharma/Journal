@@ -1,8 +1,19 @@
 const remote = require("electron").remote;
+const fs = require("fs");
 
 sections = ["highlights", "todo", "notes"];
 
-initializeSections();
+let journalData, journal;
+
+initWindow();
+
+function initWindow() {
+    journalData = fs.readFileSync("journal.json").toString();
+    journal = JSON.parse(journalData);
+    document.getElementById("title").innerHTML =
+        "Journal | " + journal["owner"];
+    initializeSections();
+}
 
 function initializeSections() {
     showSection(sections[0]);
