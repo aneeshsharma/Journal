@@ -29,7 +29,7 @@ body {
 }
 
 .title-bar .filler {
-    width: 80px;
+    width: 60px;
 }
 
 .title-bar h1 {
@@ -72,7 +72,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 80px;
+    width: 60px;
     height: 100%;
     background-color: rgb(46, 50, 109);
     z-index: 1;
@@ -86,7 +86,7 @@ body {
     background: inherit;
     text-align: center;
     padding: 10px;
-    height: 80px;
+    height: 60px;
     font-size: 20px;
     transition-duration: 0.2s;
 }
@@ -116,4 +116,22 @@ body {
     flex-grow: 100;
     padding: 20px;
     justify-content: center;
+}
+
+.content h1 {
+    position: relative;
+    color: #333;
+    font-size: 30px;
+    animation: enter-top 0.5s;
+}
+
+@keyframes enter-top {
+    from {
+        opacity: 0;
+        top: -20px;
+    }
+    to {
+        opacity: 1;
+        top: 0;
+    }
 }

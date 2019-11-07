@@ -28,16 +28,24 @@
         </div>
         <div class="container">
             <div class="sections">
-                <button class="active"><i class="fas fa-star"></i></button>
-                <button><i class="fas fa-list-ol"></i></button>
-                <button><i class="far fa-file-alt"></i></button>
+                <button id="highlights-btn" class="active">
+                    <i class="fas fa-star"></i>
+                </button>
+                <button id="todo-btn"><i class="fas fa-list-ol"></i></button>
+                <button id="notes-btn"><i class="far fa-file-alt"></i></button>
             </div>
-            <div class="content">
+            <div class="content" id="highlights">
                 <h1>Highlights</h1>
+            </div>
+            <div class="content" id="todo">
+                <h1>TODO</h1>
+            </div>
+            <div class="content" id="notes">
+                <h1>Notes</h1>
             </div>
         </div>
     </body>
     <script>
-        require("./scripts/renderer.js");
+        require("./scripts/mainwindow.js");
     </script>
 </html>
