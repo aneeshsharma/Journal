@@ -1,19 +1,18 @@
-const remote = require('electron').remote;
+const remote = require("electron").remote;
 
-document.getElementById('minimize-btn').addEventListener('click', () => {
+document.getElementById("minimize-btn").addEventListener("click", () => {
     remote.getCurrentWindow().minimize();
-})
+});
 
-document.getElementById('maximize-btn').addEventListener('click', () => {
+document.getElementById("maximize-btn").addEventListener("click", () => {
     const currentWindow = remote.getCurrentWindow();
-    if (currentWindow.isMaximized()){
+    if (currentWindow.isMaximized()) {
         currentWindow.unmaximize();
-    }
-    else{
+    } else {
         currentWindow.maximize();
     }
-})
+});
 
-document.getElementById('close-btn').addEventListener('click', () => {
+document.getElementById("close-btn").addEventListener("click", () => {
     remote.app.quit();
-})
+});

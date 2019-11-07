@@ -2,17 +2,29 @@
 
 <html>
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/master.css" type="text/css" />
+        <link
+            rel="stylesheet"
+            href="./node_modules/@fortawesome/fontawesome-free/css/all.css"
+            type="text/css"
+        />
         <title>Journal</title>
-        <link rel="stylesheet" href="css/master.css" type="text/css">
-        <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css" type="text/css">
     </head>
     <body>
         <div class="title-bar">
             <div class="filler"></div>
             <h1><i class="far fa-file-alt"></i>&nbsp;&nbsp;&nbsp;Journal</h1>
-            <button class="title-btn normal" id="minimize-btn"><i class="far fa-window-minimize"></i></button>
-            <button class="title-btn normal" id="maximize-btn"><i class="far fa-window-maximize"></i></button>
-            <button class="title-btn red" id="close-btn"><i class="fas fa-times"></i></button>
+            <button class="title-btn normal" id="minimize-btn">
+                <i class="far fa-window-minimize"></i>
+            </button>
+            <button class="title-btn normal" id="maximize-btn">
+                <i class="far fa-window-maximize"></i>
+            </button>
+            <button class="title-btn red" id="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
         </div>
         <div class="container">
             <div class="sections">
@@ -26,6 +38,6 @@
         </div>
     </body>
     <script>
-        require('./scripts/renderer.js')
+        require("./scripts/renderer.js");
     </script>
 </html>

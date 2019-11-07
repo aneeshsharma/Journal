@@ -1,14 +1,14 @@
-*{
+* {
     box-sizing: border-box;
     outline: none;
     font-family: sans-serif;
 }
 
-html{
+html {
     height: 100%;
 }
 
-body{
+body {
     padding: 0;
     margin: 0;
     height: 100%;
@@ -18,7 +18,7 @@ body{
     color: rgb(53, 52, 52);
 }
 
-.title-bar{
+.title-bar {
     -webkit-app-region: drag;
     display: flex;
     text-align: left;
@@ -28,11 +28,11 @@ body{
     padding: 0;
 }
 
-.title-bar .filler{
+.title-bar .filler {
     width: 80px;
 }
 
-.title-bar h1{
+.title-bar h1 {
     color: white;
     padding: 10px 20px;
     margin-left: 80px;
@@ -41,7 +41,7 @@ body{
     flex-grow: 100;
 }
 
-.title-btn{
+.title-btn {
     -webkit-app-region: no-drag;
     cursor: pointer;
     background-color: rgb(26, 22, 87);
@@ -52,15 +52,15 @@ body{
     transition-duration: 0.1s;
 }
 
-.title-btn:hover{
+.title-btn:hover {
     background-color: rgb(20, 20, 26);
 }
 
-.title-bar .red:hover{
+.title-bar .red:hover {
     background-color: rgb(184, 28, 28);
 }
 
-.container{
+.container {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
@@ -68,7 +68,7 @@ body{
     overflow: hidden;
 }
 
-.sections{
+.sections {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -78,7 +78,7 @@ body{
     z-index: 1;
 }
 
-.sections button{
+.sections button {
     margin: 0;
     cursor: pointer;
     color: white;
@@ -91,27 +91,27 @@ body{
     transition-duration: 0.2s;
 }
 
-.sections button:hover{
+.sections button:hover {
     background-color: rgb(57, 63, 134);
     color: white;
 }
 
-.sections .active{
+.sections .active {
     background-color: #eee;
     color: #222;
 }
 
-.sections .active:hover{
+.sections .active:hover {
     background-color: #eee;
     color: #222;
 }
 
-.fill{
+.fill {
     display: flex;
     flex-grow: 100;
 }
 
-.content{
+.content {
     display: flex;
     flex-grow: 100;
     padding: 20px;
