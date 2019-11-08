@@ -6,8 +6,7 @@
     "email": "example@example.com",
     "scripts": {
         "start": "electron .",
-        "build": "electron-packager . journal --overwrite --platform=linux --arch=x64 --prune=true --out=release-builds --version-string.ProductName=\"Journal\"",
-        "dist": "electron-builder"
+        "build": "electron-builder"
     },
     "build": {
         "appId": "com.journal",
@@ -30,13 +29,14 @@
     },
     "license": "GPL-3.0",
     "devDependencies": {
-        "@fortawesome/fontawesome-free": "^5.11.2",
         "electron": "^7.1.0",
         "electron-builder": "^22.1.0",
         "electron-packager": "^14.1.0"
     },
     "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.11.2",
         "electron-reload": "^1.5.0",
+        "fs": "0.0.1-security",
         "npm": "^6.13.0",
         "upgrade": "^1.1.0"
     }
