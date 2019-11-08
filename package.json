@@ -15,6 +15,9 @@
                 "AppImage",
                 "deb"
             ]
+        },
+        "win": {
+            "target": "portable"
         }
     },
     "keywords": [

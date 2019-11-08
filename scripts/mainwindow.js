@@ -7,8 +7,10 @@ let journalData, journal;
 
 initWindow();
 
+fs.readFile("journal.js");
+
 function initWindow() {
-    journalData = fs.readFileSync("journal.json").toString();
+    // journalData = fs.readFileSync("journal.json").toString();
     journal = JSON.parse(journalData);
     document.getElementById("title").innerHTML =
         "<b>Journal</b> | " + journal["owner"];
