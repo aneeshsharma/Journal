@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "description": "A time management application",
     "main": "main.js",
-    "email": "example@example.com",
+    "email": "aneeshsharma15@outlook.com",
     "scripts": {
         "start": "electron .",
         "build": "electron-builder"
@@ -32,15 +32,15 @@
     },
     "license": "GPL-3.0",
     "devDependencies": {
-        "electron": "^7.1.0",
-        "electron-builder": "^22.1.0",
-        "electron-packager": "^14.1.0"
+        "electron": ">=8.1.1",
+        "electron-builder": ">=22.4.1",
+        "electron-packager": ">=14.2.1"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-free": "^5.11.2",
-        "electron-reload": "^1.5.0",
-        "fs": "0.0.1-security",
-        "npm": "^6.13.0",
-        "upgrade": "^1.1.0"
+        "@fortawesome/fontawesome-free": ">=5.12.1",
+        "electron-reload": ">=1.5.0",
+        "fs": ">=0.0.1-security",
+        "npm": ">=6.14.3",
+        "upgrade": ">=1.1.0"
     }
 }
