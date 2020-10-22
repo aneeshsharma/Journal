@@ -14,6 +14,7 @@ function initWindow() {
     journal = JSON.parse(journalData);
     document.getElementById("title").innerHTML =
         "<b>Journal</b> | " + journal["owner"];
+
     initializeSections();
 }
 
